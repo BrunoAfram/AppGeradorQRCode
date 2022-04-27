@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Gerador de QR Code"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Insira o conteúdo do QR code"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnGenerateQRCode"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editQRCode"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#474747"
+        android:shadowColor="#292929"
+        android:text="Gerar"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgQRCode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btnGenerateQRCode"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgQRCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#474747"
+        android:shadowColor="#292929"
+        android:text="Compartilhar"
+        android:visibility="gone"/>
+
+</RelativeLayout>
